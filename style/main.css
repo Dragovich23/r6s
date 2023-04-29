@@ -1,0 +1,59 @@
+
+header {
+    background-color:lightgreen;
+    padding: 5px;
+    width:100%; 
+    display: flex;
+    justify-content: right;
+    background-image: url(../banner.jpg);
+}
+body {
+    background-color: #414753;
+}
+.main {
+    display: block;
+    width: 80vw;
+    background-color: #5e6473;
+    height: 95vh;
+    margin: auto;
+}
+.nav {
+    padding: 10px;
+}
+/* #5e6473, #414753*/
+.nav-link {
+    background-color:#5e6473;
+    margin: 3px;
+}
+.nav-link:link, .nav-link:visited {
+  color: #f0ffff;
+}
+/* Animacja */
+[aria-current="page"] {
+    animation: szejker 2s linear infinite;
+  }
+  
+  /* Keyframes */
+  @keyframes szejker {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-9deg);
+    }
+    20% {
+      transform: rotateZ(6deg);
+    }
+    25% {
+      transform: rotateZ(-6deg);
+    }
+    30% {
+      transform: rotateZ(4deg);
+    }
+    35% {
+      transform: rotateZ(-2deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
