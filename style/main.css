@@ -1,14 +1,42 @@
+/* #5e6473, #414753*/
+
+/* Navbar*/
 
 header {
-    background-color:lightgreen;
     padding: 5px;
     width:100%; 
     display: flex;
     justify-content: right;
-    background-image: url(../banner.jpg);
+    background-image: url(../content/banner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    flex-wrap: nowrap; 
 }
+
+.nav {
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  background-color:#5e6473;
+  margin: 3px;
+}
+.nav-link:link, .nav-link:visited {
+color: #f0ffff;
+}
+
+/* Logo */
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin-left: 72%;
+  margin-right: auto;
+}
+
+/* Tło*/
+
 body {
     background-color: #414753;
 }
@@ -16,26 +44,19 @@ body {
     display: block;
     width: 80vw;
     background-color: #5e6473;
-    height: 95vh;
+    height: 400vh;
     margin: auto;
 }
-.nav {
-    padding: 10px;
-}
-/* #5e6473, #414753*/
-.nav-link {
-    background-color:#5e6473;
-    margin: 3px;
-}
-.nav-link:link, .nav-link:visited {
-  color: #f0ffff;
-}
+
+
 /* Animacja */
+
 [aria-current="page"] {
     animation: szejker 2s linear infinite;
   }
   
-  /* Keyframes */
+  /* Animacja - Keyframes */
+
   @keyframes szejker {
     0%, 7% {
       transform: rotateZ(0);
@@ -58,4 +79,45 @@ body {
     40%, 100% {
       transform: rotateZ(0);
     }
+
+    /* Ikony */
+
+  }
+  .box{
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+   }
+
+   .mAuto {
+    margin: auto;
+   }
+   .ikony {
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 40px;
+   }
+
+   /* Karty postaci */
+
+   .karta{
+    height: 50vh;
+    width: 66vw;
+    margin: auto;
+    background: #414753; 
+    background: radial-gradient(circle, #CBA034 2%, #414753 100%);
+  }
+  .kartazdjecie {
+      width: 333px;
+      height: 300px;
+      margin-top: -8px;
+      margin-bottom: -8px;
+  }
+  .card-body {
+    padding: 0.75rem;
+  }
+  .zdjeciesrodek {
+    display: flex;
+    align-items: center;
   }
