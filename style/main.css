@@ -32,7 +32,7 @@ color: #f0ffff;
 .logo {
   width: 70px;
   height: 70px;
-  margin-left: 72%;
+  margin-left: 70%;
   margin-right: auto;
 }
 
@@ -100,20 +100,50 @@ body {
     padding-right: 40px;
    }
 
+   .operator-icon {
+    --s: 180px;   /* rozmiar obrazka */
+    --b: 4px;     /* grubość bordera*/
+    --g: 12px;    /* przerwa */
+    --c: #CBA034; /* kolor */
+    
+    width: var(--s);
+    aspect-ratio: 1;
+    outline: calc(var(--s)/2.2) solid rgba(0, 0, 0, 0);
+    outline-offset: calc(var(--s)/-2);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15%;
+  }
+  .operator-icon:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    transform: scale(1.2);
+  }
+  
+  .operator-icon + .operator-icon {
+    border-radius: 50%;
+  }
+
    /* Karty postaci */
 
    .karta{
-    height: 50vh;
+    height: 45vh;
+    min-height: 400px;
     width: 66vw;
     margin: auto;
     background: #414753; 
     background: radial-gradient(circle, #CBA034 2%, #414753 100%);
   }
+  .karta.cav {
+    min-height: 450px;
+  }
   .kartazdjecie {
-      width: 333px;
-      height: 300px;
-      margin-top: -8px;
-      margin-bottom: -8px;
+      width: 300px;
+      height: 284px;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      margin-left: auto;
+      margin-right: auto;
   }
   .card-body {
     padding: 0.75rem;
