@@ -45,7 +45,8 @@ body {
     display: block;
     width: 80vw;
     background-color: #5e6473;
-    height: 600vh;
+    height: fit-content;
+    padding-bottom: 10px;
     margin: auto;
 }
 
@@ -166,7 +167,11 @@ body {
     display: flex;
     justify-content: center;
   }
-  .card-text-main, .text-body-secondary {
+  .card-text-main {
+    display: none;
+  }
+
+  .text-body-secondary {
     opacity: 0;
   }
   .text-body-secondary {
