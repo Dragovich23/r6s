@@ -1,11 +1,7 @@
 $(function() {
 
-function
-
-$("img[src='./content/mira_icon.png']").on("click", function() {
-
-});
-
-
+    $("img[src='operator-icon']").click(function(){
+        $("div[class='kartazdjecie']").toggle();
+      });
 
 });
