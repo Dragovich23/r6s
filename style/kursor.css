@@ -1,0 +1,23 @@
+body, .nav-link {
+    cursor: url('../content/kursory/gun-solid.svg'), auto;
+}
+
+video {
+    cursor: url('../content/kursory/film-solid.svg'), auto;
+}
+
+video::-webkit-media-controls-panel,video::-webkit-media-controls-play-button,video::-webkit-media-controls-volume-slider-container,video::-webkit-media-controls-volume-slider,video::-webkit-media-controls-mute-button,video::-webkit-media-controls-timeline,video::-webkit-media-controls-current-time-display,video::-webkit-full-page-media::-webkit-media-controls-panel,video::-webkit-media-controls-timeline-container,video::-webkit-media-controls-time-remaining-display,video::-webkit-media-controls-seek-back-button,video::-webkit-media-controls-seek-forward-button,video::-webkit-media-controls-fullscreen-button,video::-webkit-media-controls-rewind-button,video::-webkit-media-controls-return-to-realtime-button,video::-webkit-media-controls-toggle-closed-captions-button {
+     cursor: url('../content/kursory/film-solid.svg'), pointer; /* niestety te selektory działają tylko w chrome :( */
+}
+
+.operator-icon {
+    cursor: url('../content/kursory/helmet-un-solid.svg'), auto;
+}
+
+.bronie {
+    cursor: url('../content/kursory/file-audio-solid.svg'), auto;
+}
+
+.kartazdjecie {
+    cursor: url('../content/kursory/image-solid.svg'), auto;
+}

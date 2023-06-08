@@ -8,11 +8,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/kursor.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
     <link rel="icon" href="./content/icon.svg">
     <script src="./scripts/jquery-3.6.3.min.js"></script>
     
-    
+    <audio preload="auto" id="vector" src="./content/dzwieki/vector.mp3"></audio>
+    <audio preload="auto" id="ita12" src="./content/dzwieki/ita12l.mp3"></audio>
+    <audio preload="auto" id="mp7" src="./content/dzwieki/mp7.mp3"></audio>
+    <audio preload="auto" id="m870" src="./content/dzwieki/m870.mp3"></audio>
+    <audio preload="auto" id="g8a1" src="./content/dzwieki/g8a1.mp3"></audio>
+    <audio preload="auto" id="super" src="./content/dzwieki/supernova.mp3"></audio>
+    <audio preload="auto" id="m12" src="./content/dzwieki/m12.mp3"></audio>
+    <audio preload="auto" id="spas" src="./content/dzwieki/spas15.mp3"></audio>
+    <audio preload="auto" id="dp27" src="./content/dzwieki/dp27.mp3"></audio>
+    <audio preload="auto" id="vsn" src="./content/dzwieki/vsn.mp3"></audio>
+    <audio preload="auto" id="fmg" src="./content/dzwieki/fmg9.mp3"></audio>
+    <audio preload="auto" id="six12" src="./content/dzwieki/six12.mp3"></audio>
 </head>
 <body>
     <header>
@@ -24,7 +36,9 @@
             <a href="#" class="nav-link">Placeholder 2</a>
          </nav>
     </header>
-    <video src="./content/video.mp4" width="100%" height="60%" autoplay controls></video>
+    <div class="video">
+      <video src="./content/video.mp4" width="100%" height="60%" autoplay loop controls></video>
+    </div>
    <main class="main">
 <br><br><br><br>
     <div class="container text-center">
@@ -79,8 +93,8 @@
                         <ul>	
                             <li>
                                 Broń główna <ul>
-                                <li>Vector .45 ACP</li>
-                                <li>ITA12L</li>
+                                <li class="bronie">Vector .45 ACP</li>
+                                <li class="bronie">ITA12L</li>
                             </ul>
                             </li>
                             <li>
@@ -124,8 +138,8 @@
                         <ul>	
                             <li>
                                 Broń główna <ul>
-                                <li>MP7</li>
-                                <li>M870</li>
+                                <li class="bronie">MP7</li>
+                                <li class="bronie">M870</li>
                             </ul>
                             </li>
                             <li>
@@ -167,8 +181,8 @@
               <ul>	
                   <li>
                       Broń główna <ul>
-                      <li>G8A1</li>
-                      <li>SuperNova</li>
+                      <li class="bronie">G8A1</li>
+                      <li class="bronie">SuperNova</li>
                   </ul>
                   </li>
                   <li>
@@ -217,8 +231,8 @@
               <ul>	
                   <li>
                       Broń główna <ul>
-                      <li>M12</li>
-                      <li>SPAS-15</li>
+                      <li class="bronie">M12</li>
+                      <li class="bronie">SPAS-15</li>
                   </ul>
                   </li>
                   <li>
@@ -263,8 +277,8 @@
               <ul>	
                   <li>
                       Broń główna <ul>
-                      <li>DP27</li>
-                      <li>9×19VSN</li>
+                      <li class="bronie">DP27</li>
+                      <li class="bronie">9×19VSN</li>
                   </ul>
                   </li>
                   <li>
@@ -309,8 +323,8 @@
               <ul>	
                   <li>
                       Broń główna <ul>
-                      <li>FMG-9</li>
-                      <li>SIX12 SD</li>
+                      <li class="bronie">FMG-9</li>
+                      <li class="bronie">SIX12 SD</li>
                   </ul>
                   </li>
                   <li>
